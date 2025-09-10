@@ -1,0 +1,357 @@
+/* ==========================
+   General Styles
+========================== */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* ==========================
+   Overlay
+========================== */
+.overlay {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* ==========================
+   Logo
+========================== */
+.logo {
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* ==========================
+   Premium Animated Heading
+========================== */
+.pop-heading {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 700;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(270deg, #ff00ff, #00ffff, #ffcc00, #ff00ff);
+    background-size: 600% 600%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+    animation: shine 5s ease-in-out infinite, popUp 1s ease-in-out forwards;
+}
+
+/* Gradient Shine Animation */
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Pop-Up Entrance Animation */
+@keyframes popUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ==========================
+   Subtitle Glow
+========================== */
+.glow-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #d1c4e9;
+    text-shadow: 0 0 6px #a855f7, 0 0 10px #9333ea;
+}
+
+.glow-subtitle .brand {
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 0 0 10px #fbc02d, 0 0 20px #ffeb3b;
+}
+
+
+/* ==========================
+   Bottom Section
+========================== */
+.bottom-section {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==========================
+   Notify Form
+========================== */
+.notify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/* Glassmorphic Input */
+.notify-container input {
+    padding: 14px;
+    width: 280px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    /* backdrop-filter: blur(8px); */
+    color: #fff;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.notify-container input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 20px #9333ea;
+}
+
+/* Notify Button */
+.notify-container button {
+    padding: 14px 25px;
+    background: linear-gradient(135deg, #7b2ff7, #f107a3);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px #f107a3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
+}
+
+.notify-container button:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0px 20px #ff00ff;
+    background: linear-gradient(135deg, #f107a3, #7b2ff7);
+}
+
+/* ==========================
+   SweetAlert2 Customization
+========================== */
+.swal2-popup {
+    background: rgba(20, 20, 20, 0.95) !important;
+    border-radius: 20px !important;
+    /* backdrop-filter: blur(10px); */
+    color: #fff !important;
+    font-family: 'Baloo 2', cursive;
+}
+
+.swal2-title {
+    color: #ffeb3b !important;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+.swal2-confirm {
+    background: linear-gradient(135deg, #7b2ff7, #f107a3) !important;
+    border-radius: 25px !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+    box-shadow: 0px 0px 10px #f107a3 !important;
+    transition: 0.3s !important;
+}
+
+.swal2-confirm:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 18px #ff00ff !important;
+}
+
+/* ==========================
+   Social Icons
+========================== */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================
+   General Styles
+========================== */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* ==========================
+   Product Grid
+========================== */
+.products {
+  padding: 40px 20px;
+  background: #000;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #ffeb3b;
+  text-shadow: 0 0 8px #fbc02d;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+}
+
+.product-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #fff;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* ==========================
+   Footer
+========================== */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 40px;
+  border-top: 2px solid #000;
+}
+
+.footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer-company {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 8px;
+}
+
+/* ==========================
+   Animations
+========================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ==========================
+   Responsive Fixes
+========================== */
+@media screen and (max-width: 600px) {
+  .notify-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .notify-container input,
+  .notify-container button {
+    width: 90%;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .pop-heading {
+    font-size: 2rem;
+  }
+}
