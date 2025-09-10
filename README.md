@@ -1,9 +1,9 @@
-Clothing Brand – Coming Soon Page
+# Clothing Brand – Coming Soon Page
 
 This project is a Coming Soon landing page for a clothing brand. It features a clean black background with stylish 3D text effects to create a premium look. Visitors can subscribe with their email to stay updated about the official launch.
 The project is fully responsive and works on all modern browsers. No backend setup is required since it uses Formspree to handle email submissions. Whenever a user submits their email, the information is securely stored in Formspree’s dashboard, making it easy to manage subscribers.
 
-# How to Run the Project
+## How to Run the Project
 Clone or Download the Repository
 git clone <your-repo-link>
 cd project-folder
