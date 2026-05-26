@@ -30,7 +30,7 @@ The subscription form is connected with Formspree:
 
 Replace YOUR_FORM_ID with your Formspree endpoint
 
-Submitted emails will be stored in your Formspree dashboard
+Submitted emails will be stored in your #Formspree# dashboard
 
 You can also configure email forwarding to receive notifications directly
 
